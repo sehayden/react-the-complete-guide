@@ -32,7 +32,8 @@ const InputForm = (props) => {
               </td>
               <td>
                 <input id="txtAge" style={{ padding: "1vh" }} onChange={e => {
-                  setAge(e.target.value)
+                  setAge(Number(e.target.value))
+                  console.log(typeof age)
                 }}></input>
               </td>
             </tr>
